@@ -342,3 +342,43 @@
 .bp3-dark .rm-help-results .rm-help-categories .rm-help-category-menu-item:hover {
   background-color: var(--dark-bg-2);
 }
+
+
+/* kanban */
+
+.bp3-dark .kanban-board {
+  background-color: var(--dark-left-bg);
+}
+
+.bp3-dark .kanban-column {
+  background-color: var(--dark-bg);
+}
+
+.bp3-dark .kanban-card {
+  background-color: var(--dark-bg-2);
+}
+
+
+.bp3-dark .kanban-card textarea{
+  background-color: var(--dark-bg-2);
+  box-shadow: unset;
+}
+
+/* calc */
+.bp3-dark .rm-calc-val {
+  color: #3DCC91;
+}
+
+.bp3-dark button {
+  color: var(--dark-bg);
+}
+
+/* query */
+
+.bp3-dark .rm-query {
+  border-color: var(--dark-bg-embed);
+}
+
+.bp3-dark .rm-query-title{
+  background-color: var(--dark-bg-2)
+}
