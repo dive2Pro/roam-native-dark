@@ -24,7 +24,9 @@ function onload({ extensionAPI }: { extensionAPI: RoamExtensionAPI }) {
       },
     ],
   });
-  document.body.classList.add("bp3-dark");
+  if (extensionAPI.settings.get('enabled') !== 'light') {
+    document.body.classList.add("bp3-dark");
+  }
 }
 
 function onunload() {
