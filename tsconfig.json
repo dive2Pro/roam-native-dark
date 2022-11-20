@@ -24,8 +24,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  "files": [
-    "node_modules/roamjs-components/types/index.d.ts"
   ]
 }
