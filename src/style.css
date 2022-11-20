@@ -62,14 +62,14 @@
 
 .bp3-dark .rm-bullet__inner {
   border: 4px solid var(--dark-bg);
-  background-color: #f5f8fa;
+  background-color: #738694;
 }
 
 .bp3-dark .rm-embed-container .rm-bullet__inner {
   border-color: var(--dark-bg-embed);
 }
 .bp3-dark .rm-bullet.rm-bullet--closed .rm-bullet__inner {
-  border: 4px double #ded5d5 !important;
+  border: 4px double #738694 !important;
 }
 .bp3-dark .rm-page-ref--link {
   color: #48aff0;
@@ -390,4 +390,9 @@
 
 .bp3-dark .rm-settings .bp3-control.bp3-switch input span {
   background-color: rgba(167, 182, 194, 0.5);
+}
+
+
+.bp3-dark .rm-multibar {
+  border-color: #738694;
 }
