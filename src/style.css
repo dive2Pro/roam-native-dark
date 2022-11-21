@@ -5,6 +5,7 @@
   --dark-bg-2: #293742;
   --dark-hl: rgba(138, 155, 168, 0.15);
   --dark-bg-embed: #202b33;
+  --dark-highlight-yellow: #d9822b40;
 }
 
 .bp3-dark {
@@ -395,4 +396,16 @@
 
 .bp3-dark .rm-multibar {
   border-color: #738694;
+}
+
+.bp3-dark .rm-menu-item--active {
+  background-color: var(--dark-bg-2);
+}
+
+.bp3-dark .rm-command-palette__scroll-container .rm-command-palette__menu .rm-menu-item--active {
+  background-color: var(--dark-bg-2);
+}
+
+.bp3-dark .rm-command-palette__shortcut {
+  background-color: var(--dark-bg-embed);
 }
