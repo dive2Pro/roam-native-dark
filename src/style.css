@@ -67,8 +67,14 @@
 }
 
 .bp3-dark .rm-embed-container .rm-bullet__inner {
-  border-color: var(--dark-bg-embed);
+  border-color: var(--dark-bg-embed);  
 }
+
+
+.bp3-dark .rm-reference-item .rm-bullet__inner {
+  border-color: transparent;  
+}
+
 .bp3-dark .rm-bullet.rm-bullet--closed .rm-bullet__inner {
   border: 4px double #738694 !important;
 }
