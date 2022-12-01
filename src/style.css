@@ -415,3 +415,16 @@
 .bp3-dark .rm-command-palette__shortcut {
   background-color: var(--dark-bg-embed);
 }
+
+.bp3-dark .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+  border-color: var(--dark-bg-embed);
+  background-color: var(--dark-bg-embed);
+}
+
+.bp3-dark .sorting-button-group .sort-button.focused {
+  color: white;
+}
+
+.bp3-dark .sorting-button-group {
+  color: #5C7080;
+}
