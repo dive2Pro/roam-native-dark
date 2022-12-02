@@ -3,6 +3,7 @@
   --dark-left-bg: #394b59;
   --dark-ff: #f5f8fa;
   --dark-bg-2: #293742;
+  --dark-bg-3: #354655;
   --dark-hl: rgba(138, 155, 168, 0.15);
   --dark-bg-embed: #202b33;
   --dark-highlight-yellow: #d9822b40;
@@ -427,4 +428,8 @@
 
 .bp3-dark .sorting-button-group {
   color: #5C7080;
+}
+
+.bp3-dark .rm-g.rm-not-focused .rm-block {
+  background-color: var(--dark-bg-3);
 }
