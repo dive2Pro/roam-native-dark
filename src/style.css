@@ -433,3 +433,9 @@
 .bp3-dark .rm-g.rm-not-focused .rm-block {
   background-color: var(--dark-bg-3);
 }
+
+/* for hotkeys */
+
+.bp3-dark .rm-hotkeys-hotkey__part.bp3-tag{
+  color: #b8c1c7;
+}
