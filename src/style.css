@@ -439,3 +439,7 @@
 .bp3-dark .rm-hotkeys-hotkey__part.bp3-tag{
   color: #b8c1c7;
 }
+
+.bp3-dark .rm-embed-path {
+  background-color: var(--dark-bg-3);
+}
