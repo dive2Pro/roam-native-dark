@@ -443,3 +443,7 @@
 .bp3-dark .rm-embed-path {
   background-color: var(--dark-bg-3);
 }
+
+.bp3-dark .bp3-popover-content {
+  background-color: var(--dark-bg-2);
+}
