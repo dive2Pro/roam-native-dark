@@ -11,6 +11,7 @@
 
 .bp3-dark {
   background: var(--dark-bg);
+  color: var(--dark-ff);
 }
 .bp3-dark .roam-app {
   color: var(--dark-ff);
@@ -68,12 +69,11 @@
 }
 
 .bp3-dark .rm-embed-container .rm-bullet__inner {
-  border-color: var(--dark-bg-embed);  
+  border-color: var(--dark-bg-embed);
 }
 
-
 .bp3-dark .rm-reference-item .rm-bullet__inner {
-  border-color: transparent;  
+  border-color: transparent;
 }
 
 .bp3-dark .rm-bullet.rm-bullet--closed .rm-bullet__inner {
@@ -391,7 +391,7 @@
 
 .bp3-dark .rm-query-title {
   background-color: var(--dark-bg-2);
-  color: #48AFF0;
+  color: #48aff0;
 }
 
 /* settings */
@@ -399,7 +399,6 @@
 .bp3-dark .rm-settings .bp3-control.bp3-switch input span {
   background-color: rgba(167, 182, 194, 0.5);
 }
-
 
 .bp3-dark .rm-multibar {
   border-color: #738694;
@@ -409,7 +408,10 @@
   background-color: var(--dark-bg-2);
 }
 
-.bp3-dark .rm-command-palette__scroll-container .rm-command-palette__menu .rm-menu-item--active {
+.bp3-dark
+  .rm-command-palette__scroll-container
+  .rm-command-palette__menu
+  .rm-menu-item--active {
   background-color: var(--dark-bg-2);
 }
 
@@ -427,7 +429,7 @@
 }
 
 .bp3-dark .sorting-button-group {
-  color: #5C7080;
+  color: #5c7080;
 }
 
 .bp3-dark .rm-g.rm-not-focused .rm-block {
@@ -436,7 +438,7 @@
 
 /* for hotkeys */
 
-.bp3-dark .rm-hotkeys-hotkey__part.bp3-tag{
+.bp3-dark .rm-hotkeys-hotkey__part.bp3-tag {
   color: #b8c1c7;
 }
 
@@ -445,5 +447,20 @@
 }
 
 .bp3-dark .bp3-popover-content {
-  background-color: var(--dark-bg-2);
+  background-color: var(--dark-bg) !important;
+  color: var(--dark-ff) !important;
+}
+.bp3-dark .bp3-tooltip .bp3-popover-arrow-fill {
+  fill: var(--dark-bg);
+}
+.bp3-dark .bp3-tool-tip {
+
+}
+
+.bp3-dark .bp3-popover,
+.bp3-popover.bp4-dark {
+  -webkit-box-shadow: 0 0 0 1px rgb(16 22 26 / 20%),
+    0 2px 4px rgb(16 22 26 / 40%), 0 8px 24px rgb(16 22 26 / 40%);
+  box-shadow: 0 0 0 1px rgb(16 22 26 / 20%), 0 2px 4px rgb(16 22 26 / 40%),
+    0 8px 24px rgb(16 22 26 / 40%);
 }
