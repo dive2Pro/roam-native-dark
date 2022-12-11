@@ -477,6 +477,9 @@
     0 8px 24px rgb(16 22 26 / 40%);
 }
 
+.bp3-dark .roam-body .roam-app h1 {
+  color: white;
+}
 
 .bp3-dark .ͼ2 .cm-selectionBackground {
   background-color: #3e413e;
