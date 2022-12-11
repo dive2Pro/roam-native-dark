@@ -4,6 +4,7 @@
   --dark-ff: #f5f8fa;
   --dark-bg-2: #293742;
   --dark-bg-3: #354655;
+  --dark-bg-4: #252A31;
   --dark-hl: rgba(138, 155, 168, 0.15);
   --dark-bg-embed: #202b33;
   --dark-highlight-yellow: #d9822b40;
@@ -68,6 +69,17 @@
   background-color: #738694;
 }
 
+.bp3-dark .block-highlight-blue .rm-bullet__inner {
+    background: white;
+    border-color: #006ee3c7;
+}
+
+.bp3-dark .block-highlight-grey .rm-bullet__inner {
+    background-color: white;
+    border-color: var(--dark-bg-4);
+}
+
+
 .bp3-dark .rm-embed-container .rm-bullet__inner {
   border-color: var(--dark-bg-embed);
 }
@@ -97,6 +109,9 @@
 }
 .bp3-dark .block-highlight-blue {
   background: rgba(125, 188, 255, 0.6);
+}
+.bp3-dark .block-highlight-blue .block-highlight-blue {
+  background: transparent;
 }
 .bp3-dark
   .roam-body
@@ -465,4 +480,8 @@
 
 .bp3-dark .ͼ2 .cm-selectionBackground {
   background-color: #3e413e;
+}
+
+.bp3-dark .block-highlight-grey {
+  background-color: var(--dark-bg-4);
 }
