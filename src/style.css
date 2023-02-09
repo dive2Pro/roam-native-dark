@@ -488,3 +488,11 @@
 .bp3-dark .block-highlight-grey {
   background-color: var(--dark-bg-4);
 }
+
+.bp3-dark .rm-pages-toolbar .toolbar-search-group .search-input {
+  background-color: var(--dark-bg-2);
+}
+
+.bp3-dark .rm-sidebar-search > div {
+  background-color: var(--dark-bg-3) !important
+}
