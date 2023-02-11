@@ -496,3 +496,20 @@
 .bp3-dark .rm-sidebar-search > div {
   background-color: var(--dark-bg-3) !important
 }
+
+.bp3-dark .rm-streak__day-0 {
+  background: #2d333b;
+}
+
+.bp3-dark .rm-streak__day-1 {
+  background: var(--color-calendar-graph-day-L1-dbg);
+}
+.bp3-dark .rm-streak__day-2 {
+  background: var(--color-calendar-graph-day-L2-dbg);
+}
+.bp3-dark .rm-streak__day-3 {
+  background: var(--color-calendar-graph-day-L3-dbg);
+}
+.bp3-dark .rm-streak__day-4 {
+  background: var(--color-calendar-graph-day-L4-dbg);
+}
