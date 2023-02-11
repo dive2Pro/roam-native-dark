@@ -497,19 +497,23 @@
   background-color: var(--dark-bg-3) !important
 }
 
+
 .bp3-dark .rm-streak__day-0 {
   background: #2d333b;
 }
 
 .bp3-dark .rm-streak__day-1 {
-  background: var(--color-calendar-graph-day-L1-dbg);
+  background: #0e4429;
 }
+
 .bp3-dark .rm-streak__day-2 {
-  background: var(--color-calendar-graph-day-L2-dbg);
+  background: #006d32;
 }
+
 .bp3-dark .rm-streak__day-3 {
-  background: var(--color-calendar-graph-day-L3-dbg);
+  background: #26a641;
 }
+
 .bp3-dark .rm-streak__day-4 {
-  background: var(--color-calendar-graph-day-L4-dbg);
+  background: #39d353;
 }
