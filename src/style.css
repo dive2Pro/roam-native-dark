@@ -529,3 +529,7 @@
   background-color: var(--dark-bg-2);
   border: 1px solid var(--dark-bg-4);
 }
+.bp3-dark .rm-paren svg{
+  background-color: white;
+  border-radius: 50%;
+}
