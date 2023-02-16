@@ -271,6 +271,10 @@
 .bp3-dark .cc {
   color: #998bff;
 }
+.bp3-dark .cj {
+  color: #1badcb;
+}
+
 .bp3-dark span.cmt-propertyName,
 .bp3-dark span.cmt-attribute {
   color: #a6e22e;
@@ -519,4 +523,9 @@
 
 .bp3-dark .rm-streak__day-4 {
   background: #39d353;
+}
+
+.bp3-dark .rm-paren{
+  background-color: var(--dark-bg-2);
+  border: 1px solid var(--dark-bg-4);
 }
