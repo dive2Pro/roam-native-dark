@@ -331,6 +331,10 @@
   color: white !important;
 }
 
+.bp3-dark .rm-command-palette__menu  {
+  background-color: var(--dark-bg-2);
+}
+
 .bp3-dark .bp3-menu.bp3-text-small button[style*="background-color"] {
   background-color: var(--dark-bg-2) !important;
   color: white;
@@ -427,7 +431,7 @@
 }
 
 .bp3-dark .rm-menu-item--active {
-  background-color: var(--dark-bg-2);
+  background-color: var(--dark-bg-3) !important;
 }
 
 .bp3-dark
