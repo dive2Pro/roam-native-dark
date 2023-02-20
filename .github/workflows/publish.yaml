@@ -12,7 +12,7 @@ jobs:
       FORK: 'dive2Pro'
       USER: 'dive2Pro'
       EMAIL: 'toylucklebo@gmail.com'
-      BRANCH: 'Native Dark'
+      BRANCH: 'Native-Dark'
       EXTENSION_JSON: 'extensions/hyc/roam-native-dark.json'
     steps:
       - name: Checkout repository
