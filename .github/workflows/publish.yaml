@@ -2,8 +2,8 @@ name: Update Native-Dark
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'publish*'
 
 jobs:
   update-native-dark:
