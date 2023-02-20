@@ -1,0 +1,70 @@
+name: Update Native-Dark
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-native-dark:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Git
+        run: |
+          git config --global user.name "hyc"
+          git config --global user.email "toylucklebo@gmail.com"
+      - name: Checkout roam-depot repository
+        uses: actions/checkout@v2
+        with:
+          repository: dive2Pro/roam-depot
+          ref: main
+          token: ${{ secrets.PAT }}
+      - name: Sync fork
+        run: |
+          git fetch --prune --unshallow
+          git remote add upstream "https://github.com/Roam-Research/roam-depot"
+          git fetch upstream
+          git checkout -B main upstream/main
+          git push -f origin main
+
+      - name: Delete Native-Dark branch if exists
+        run: |
+          git push origin -d Native-Dark || true
+          
+      - name: Create Native-Dark branch from main
+        run: |
+          git checkout -b Native-Dark origin/main
+
+      - name: Update roam-native-dark.json
+        run: |
+          sed -i 's/"source_commit": ".*/"source_commit": "'"$GITHUB_SHA"'",/g' extensions/hyc/roam-native-dark.json
+
+      - name: Commit and Push changes
+        run: |
+          git add extensions/hyc/roam-native-dark.json
+          git commit -m "Update source_commit to $GITHUB_SHA"
+          git push -u origin Native-Dark
+      - name: Create pull request
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.PAT }}
+          script: |
+            const branch = 'Native-Dark'; // Replace with the branch you want to create a PR for
+            const owner = 'Roam-Research';
+            const repo = 'roam-depot';
+            const title = 'Update Native Dark';
+            const body = 'This is a pull request created by a GitHub Action.';
+            const head = 'dive2Pro:Native-Dark';
+            const base = 'main'; // Replace with the branch you want to merge the PR into
+            const { data: pullRequest } = await github.pulls.create({
+              owner,
+              repo,
+              title,
+              body,
+              head,
+              base,
+            });
+            console.log(`PR created: ${pullRequest.html_url}`);
