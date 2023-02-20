@@ -57,12 +57,12 @@ jobs:
         with:
           github-token: ${{ secrets.PAT }}
           script: |
-            const branch = '$BRANCH'; // Replace with the branch you want to create a PR for
+            const branch = "${{ env.BRANCH }}"; // Replace with the branch you want to create a PR for
             const owner = 'Roam-Research';
             const repo = 'roam-depot';
             const title = 'Update ${{ github.repository }}';
             const body = '';
-            const head = '$FORK:$BRANCH';
+            const head = '${{env.FORK}}:${{env.BRANCH}}';
             const base = 'main'; // Replace with the branch you want to merge the PR into
             const { data: pullRequest } = await github.pulls.create({
               owner,
