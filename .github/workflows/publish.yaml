@@ -8,7 +8,12 @@ on:
 jobs:
   update-native-dark:
     runs-on: ubuntu-latest
-
+    env:
+      FORK: 'dive2Pro'
+      USER: 'dive2Pro'
+      EMAIL: 'toylucklebo@gmail.com'
+      BRANCH: 'Native Dark'
+      EXTENSION_JSON: 'extensions/hyc/roam-native-dark.json'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -30,7 +35,7 @@ jobs:
           git checkout -B main upstream/main
           git push -f origin main
 
-      - name: Delete $BRANCH branch if exists
+      - name: Delete ${{BRANCH}} branch if exists
         run: |
           git push origin -d $BRANCH || true
           
