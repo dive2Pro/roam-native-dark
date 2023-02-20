@@ -268,10 +268,11 @@
   color: #5998a6;
 }
 
-.bp3-dark .cc {
+.bp3-dark .cmt-labelName {
   color: #998bff;
 }
-.bp3-dark .cj {
+
+.bp3-dark .cmt-className {
   color: #1badcb;
 }
 
