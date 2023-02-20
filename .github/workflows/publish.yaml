@@ -51,7 +51,7 @@ jobs:
         run: |
           git add ${{ env.EXTENSION_JSON }}
           git commit -m "Update source_commit to $GITHUB_SHA"
-          git push -u origin ${{ github.ref }}
+          git push -u origin ${{ env.BRANCH }}
       - name: Create pull request
         uses: actions/github-script@v4
         with:
