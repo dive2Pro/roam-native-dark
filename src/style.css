@@ -537,3 +537,7 @@
   background-color: white;
   border-radius: 50%;
 }
+
+.bp3-dark .roam-article .rm-level-horizontal-outline__child {
+  background-color: var(--dark-bg);
+}
