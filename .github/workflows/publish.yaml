@@ -35,7 +35,7 @@ jobs:
           git checkout -B main upstream/main
           git push -f origin main
 
-      - name: Delete ${{BRANCH}} branch if exists
+      - name: Delete ${{ env.BRANCH }} branch if exists
         run: |
           git push origin -d $BRANCH || true
           
