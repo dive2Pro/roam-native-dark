@@ -37,11 +37,11 @@ jobs:
 
       - name: Delete ${{ env.BRANCH }} branch if exists
         run: |
-          git push origin -d $BRANCH || true
+          git push origin -d ${{env.BRANCH}} || true
           
-      - name: Create ${{ github.ref }} branch from main
+      - name: Create ${{env.BRANCH}} branch from main
         run: |
-          git checkout -b ${{ github.ref }} origin/main
+          git checkout -b ${{env.BRANCH}} origin/main
 
       - name: Update $EXTENSION_JSON
         run: |
