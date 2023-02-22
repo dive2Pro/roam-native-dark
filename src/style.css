@@ -542,3 +542,10 @@
 .bp3-dark .roam-article .rm-level-horizontal-outline__child {
   background-color: var(--dark-bg);
 }
+.bp3-dark .rm-search-query {
+  border-color: var(--dark-bg-2);
+}
+
+.bp3-dark .rm-search-query .rm-search-query-title {
+  background: var(--dark-bg-3);
+}
