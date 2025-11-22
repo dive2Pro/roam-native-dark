@@ -12,9 +12,12 @@
 }
 
 .bp3-dark .rm-diagram {
-  background-color: var(--dark-bg);
+  /* background-color: var(--dark-bg); */
+  border-color: var(--dark-bg-embed);
 }
-
+.bp3-dark .rm-diagram-title-panel {
+  background-color: var(--dark-bg-2);
+}
 .bp3-dark .rm-diagram .react-flow__node-toolbar {
   background-color: var(--dark-bg-2);
   box-shadow: 0 0 0 1px rgba(16,22,26,.4),0 0 0 rgba(16,22,26,0),0 0 0 rgba(16,22,26,0);
@@ -614,6 +617,7 @@
   background-color: var(--dark-bg);
   fill: white;
   color: white;
+  border-bottom-color: black;
 }
 
 
