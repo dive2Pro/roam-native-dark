@@ -8,6 +8,52 @@
   --dark-hl: rgba(138, 155, 168, 0.15);
   --dark-bg-embed: #202b33;
   --dark-highlight-yellow: #d9822b40;
+
+}
+
+.bp3-dark .rm-diagram {
+  background-color: var(--dark-bg);
+}
+
+.bp3-dark .rm-diagram .react-flow__node-toolbar {
+  background-color: var(--dark-bg-2);
+  box-shadow: 0 0 0 1px rgba(16,22,26,.4),0 0 0 rgba(16,22,26,0),0 0 0 rgba(16,22,26,0);
+  border-color: var(--dark-bg-4);
+}
+
+.bp3-dark .rm-diagram .react-flow__node-group.selected:after {
+  box-shadow: 0 1px 10px var(--dark-bg-2);
+}
+
+.bp3-dark .rm-diagram .react-flow__node-block.selected:after {
+  border-color: var(--dark-bg-4);
+}
+
+.bp3-dark .react-flow__minimap {
+  background-color: var(--dark-bg-2);
+}
+.bp3-dark .react-flow{
+   /* 1. 背景与大面积区域 */
+   --diagram-background-color: #202B33;     /* gray1 */
+   --group-area-fill-color: rgba(48, 64, 77, 0.25);  /* gray2 + 透明度 */
+ 
+   /* 2. 块（卡片） */
+   --block-fill-color: #30404D;             /* gray2 */
+   --block-border-color: #5C7080;           /* gray4 */
+   --block-text-color: #F5F8FA;             /* gray5 */
+   --block-unset-max-width: 200px;
+   --block-font-size: 14px;
+   --block-text-align: start;
+ 
+   /* 3. 分组标题 */
+   --group-title-fill-color: rgba(92, 112, 128, 0.3); /* gray4 + 透明度 */
+   --group-title-text-color: #EBF1F5;        /* gray5 稍亮 */
+   --group-title-font-size: 18px;
+ 
+   /* 4. 描边 / 边线 */
+   --edge-stroke-color: #5C7080;            /* gray4 */
+   --global-edge-stroke-color: #5C7080;     /* 同上 */
+   --group-border-color: #5C7080;           /* gray4 */
 }
 
 .bp3-dark {
@@ -321,6 +367,9 @@
   color: #f8f8f0;
 }
 
+.bp3-dark span.cmt-bool {
+  color: #6b58f0;
+}
 .bp3-dark .cm-activeLine {
   background: #373831 !important;
 }
@@ -548,4 +597,24 @@
 
 .bp3-dark .rm-search-query .rm-search-query-title {
   background: var(--dark-bg-3);
+}
+
+.bp3-dark .rm-query-title-input {
+  background-color: transparent;
+}
+
+.bp3-dark .rm-pdf-toolbar{
+  background-color: var(--dark-bg);
+}
+
+.bp3-dark .react-flow__controls-button {
+  background-color: var(--dark-bg);
+  fill: white;
+  color: white;
+}
+
+
+.bp3-dark .rm-diagram .rm-diagram-properties-panel {
+
+  background-color: var(--dark-bg-2);
 }
