@@ -625,3 +625,9 @@
 
   background-color: var(--dark-bg-2);
 }
+
+/* delete-all dialog */
+
+.bp3-dark .delete-all-dialog-list {
+  background-color: var(--dark-bg-2);
+}
